@@ -1,0 +1,19 @@
+.productRow {
+  &:hover {
+    background-color: $selectedColor;
+  }
+}
+
+.productsRowCell {
+  border-right: 1px solid #6183a21a;
+  border-left: 1px solid #6183a21a;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+
+  & > * {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,33 @@
+// @import "src/scss/variables";
+
+.button {
+  font-family: $fontFamily;
+  padding: 10px 15px;
+  color: #ffffff;
+  height: 37px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: $buttonColor;
+  text-align: center;
+  cursor: pointer;
+
+  img {
+    width: 20px;
+    margin-left: 10px;
+  }
+
+  &:active {
+    background-color: $buttonClickColor;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background-color: #d6d6d6;
+    cursor: default;
+
+    &:active {
+      background-color: #d6d6d6;
+    }
+  }
+}

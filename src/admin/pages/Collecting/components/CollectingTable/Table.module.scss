@@ -1,0 +1,258 @@
+// @import "src/scss/variables";
+
+.anima {
+  animation: fadeIn 1s ease;
+  border-bottom: 1px solid #6183a21a;
+  & > * {
+    border-bottom: none !important;
+    &:nth-child(even) {
+      border-left: 1px solid #6183a21a;
+      border-right: 1px solid #6183a21a;
+    }
+  }
+}
+
+.container {
+  border: 1px solid #6183a240;
+}
+
+.pagination {
+  margin-top: 20px;
+  align-items: center;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  min-height: 50px;
+
+  img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(3);
+      z-index: 10000;
+    }
+  }
+
+  p {
+    margin: 0 0 0 60px;
+  }
+}
+
+.emptyState {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+  animation: slideIn 1s ease;
+
+  img {
+    width: 300px;
+  }
+
+  p {
+    margin: 5px;
+    color: $textColor;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.emptyAnalogs {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-size: 18px;
+  color: #475467;
+}
+
+.table {
+  margin-top: 20px;
+  animation: slideIn 1s ease;
+
+  width: 95%;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.rejected {
+  background-color: rgba(203, 46, 46, 0.21);
+}
+
+.approved {
+  background-color: rgba(35, 220, 35, 0.21);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tableHeadCell {
+  background-color: #6183a20c;
+  &:nth-child(even) {
+    border-left: 1px solid #6183a21a;
+    border-right: 1px solid #6183a21a;
+  }
+
+  & > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  img {
+    width: 15px;
+  }
+}
+
+.pagination {
+  margin-top: 20px;
+  align-items: center;
+}
+
+.status {
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-radius: 100px;
+  width: max-content;
+
+  &0 {
+    background-color: #eff8ff;
+    color: #175cd3;
+  }
+
+  &1 {
+    background-color: #fef3f2;
+    color: #b42318;
+  }
+
+  &2 {
+    background-color: #ecfdf3;
+    color: #067647;
+  }
+}
+
+.show-order {
+  background-color: red !important;
+
+  &:hover {
+    background-color: green !important;
+    color: red;
+  }
+}
+
+.statusWrapper {
+  border-radius: 8px;
+  padding: 10px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.partial_approved {
+  background-color: #ebf9eb;
+  color: #6ed26e;
+}
+
+.approved {
+  background-color: #ebf9eb;
+  color: #6ed26e;
+}
+
+.rejected {
+  background-color: #fdebeb;
+  color: #f46e6f;
+}
+
+.partial_rejected {
+  background-color: #fdebeb;
+  color: #f46e6f;
+}
+
+.created {
+  background-color: #fef8e8;
+  color: #f6cd59;
+}
+
+.expandButton {
+  position: relative;
+  background-color: #6183a21a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.weightWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+
+  .weightInput {
+    width: 100px;
+    height: 35px;
+    background-color: $componentBackgroundColor;
+    color: $textColor;
+    border: none;
+    border-radius: 8px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .weightButton {
+    width: 30px;
+    height: 35px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    margin: 0;
+    cursor: pointer;
+    text-wrap: nowrap;
+  }
+}
+
+

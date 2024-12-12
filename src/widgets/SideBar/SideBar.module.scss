@@ -1,0 +1,24 @@
+.sidebarOpen {
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 0.1fr 0.1fr;
+  width: 240px;
+  position: fixed;
+  height: 100%;
+  background-color: white;
+  // padding: 10px;
+  border-right: $borderColor 2px solid;
+  transition: width 0.3s;
+  z-index: 100;
+}
+
+.sidebarClose {
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 0.1fr 0.1fr;
+  width: 80px;
+  position: fixed;
+  height: 100%;
+  background-color: white;
+  border-right: $borderColor 2px solid;
+  transition: width 0.3s;
+  z-index: 100;
+}

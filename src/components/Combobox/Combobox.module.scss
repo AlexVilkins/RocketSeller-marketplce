@@ -1,0 +1,64 @@
+// @import "src/scss/variables.scss";
+
+.customSelect {
+  color: $textColor;
+  position: relative;
+  width: max-content;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px 10px 25px 0px;
+  height: 32px;
+}
+
+.selected {
+  padding: 10px 15px;
+  background-color: $componentBackgroundColor;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+  }
+}
+
+.options {
+  padding: 5px;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: $boxShadow;
+  scrollbar-width: thin;
+  scrollbar-color: $componentBackgroundColor white;
+}
+
+.input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-weight: 400;
+}
+
+.options li {
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.options li:hover {
+  background-color: $componentBackgroundColor;
+}

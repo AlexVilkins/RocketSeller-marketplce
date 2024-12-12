@@ -1,0 +1,300 @@
+.anima {
+  animation: fadeIn 1s ease;
+  border-bottom: 1px solid #6183a21a;
+  & > * {
+    border-bottom: none !important;
+    &:nth-child(even) {
+      border-left: 1px solid #6183a21a;
+      border-right: 1px solid #6183a21a;
+    }
+  }
+}
+
+.container {
+  border: 1px solid #6183a240;
+}
+
+.pagination {
+  margin-top: 20px;
+  align-items: center;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  min-height: 50px;
+  cursor: pointer;
+
+  img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(3);
+      z-index: 1000;
+    }
+  }
+
+  p {
+    margin: 0 0 0 60px;
+  }
+}
+
+.emptyState {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+  animation: slideIn 1s ease;
+
+  img {
+    width: 300px;
+  }
+
+  p {
+    margin: 5px;
+    color: $textColor;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.emptyAnalogs {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-size: 18px;
+  color: #475467;
+}
+
+.table {
+  margin-top: 20px;
+  animation: slideIn 1s ease;
+
+  width: 95%;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.rejected {
+  background-color: rgba(203, 46, 46, 0.21);
+}
+
+.approved {
+  background-color: rgba(35, 220, 35, 0.21);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tableHeadCell {
+  background-color: #6183a20c;
+  &:nth-child(even) {
+    border-left: 1px solid #6183a21a;
+    border-right: 1px solid #6183a21a;
+  }
+
+  & > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  img {
+    width: 15px;
+  }
+}
+
+.pagination {
+  margin-top: 20px;
+  align-items: center;
+}
+
+.status {
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-radius: 100px;
+  width: max-content;
+
+  &0 {
+    background-color: #eff8ff;
+    color: #175cd3;
+  }
+
+  &1 {
+    background-color: #fef3f2;
+    color: #b42318;
+  }
+
+  &2 {
+    background-color: #ecfdf3;
+    color: #067647;
+  }
+}
+
+.show-order {
+  background-color: red !important;
+
+  &:hover {
+    background-color: green !important;
+    color: red;
+  }
+}
+
+.statusWrapper {
+  border-radius: 8px;
+  padding: 10px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.partial_approved {
+  background-color: #ebf9eb;
+  color: #6ed26e;
+}
+
+.approved {
+  background-color: #ebf9eb;
+  color: #6ed26e;
+}
+
+.rejected {
+  background-color: #fdebeb;
+  color: #f46e6f;
+}
+
+.partial_rejected {
+  background-color: #fdebeb;
+  color: #f46e6f;
+}
+
+.created {
+  background-color: #fef8e8;
+  color: #f6cd59;
+}
+
+.expandButton {
+  position: relative;
+  background-color: #6183a21a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.weightContainer {
+  display: flex;
+  align-items: center;
+  input {
+    height: 35px;
+    width: 200px;
+    background-color: $componentBackgroundColor;
+    color: $textColor;
+    border: none;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-right: 10px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+
+    img {
+      width: 25x;
+      height: 25px;
+    }
+  }
+}
+
+.newPriceInput {
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  text-align: center;
+
+  &.invalid {
+    border: 1px solid red;
+    color: red;
+  }
+}
+
+.editPriceTooltip {
+  background-color: #f44336;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 4px;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.priceWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.priceValue {
+  display: flex;
+}
+
+.editIcon {
+  display: flex;
+}

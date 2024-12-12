@@ -1,0 +1,53 @@
+.item {
+  text-align: center;
+
+  color: black;
+  font-size: 16px;
+
+  td {
+    align-items: center;
+
+    label {
+      display: flex;
+      align-items: center;
+
+      img {
+        min-width: 43px;
+        min-height: 43px;
+        border-radius: 8px;
+        background-color: rgba(246, 231, 254, 1);
+      }
+
+      p {
+        margin: 0 0 0 10px;
+      }
+    }
+
+    .status {
+      //   width: min-content;
+      // margin: 0;
+      // padding: 0;
+      // width: max-content;
+
+      width: min-content;
+      margin: auto;
+      padding: 5px 10px;
+
+      border-radius: 200px;
+      background-color: #ecfdf3;
+      color: #06762b;
+    }
+
+    .dowloadPdf {
+      cursor: pointer;
+    }
+  }
+
+  .positive {
+    color: #06762b;
+  }
+
+  .negative {
+    color: #dc2626;
+  }
+}

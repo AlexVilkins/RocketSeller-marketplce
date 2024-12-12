@@ -1,0 +1,27 @@
+.cartButton {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 19px;
+  padding: 6px 13px;
+  color: #ffffff;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  text-align: center;
+  min-width: 80%;
+  min-height: 36px;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:active {
+    background-color: $buttonColor;
+  }
+}
+
+.isInCart {
+  background-color: rgba(25, 176, 58, 1);
+}
+
+.addToCart {
+  background-color: rgba(108, 99, 255, 1);
+}

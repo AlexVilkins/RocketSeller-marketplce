@@ -1,0 +1,30 @@
+// @import "src/scss/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+
+  .title {
+    font-size: 12px;
+    font-weight: 500;
+    color: $textColor;
+    margin: 0;
+    padding: 0;
+  }
+
+  .body {
+    background-color: $componentBackgroundColor;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+
+    p {
+      color: $textColor;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+}

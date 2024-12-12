@@ -1,0 +1,164 @@
+.container {
+  position: relative;
+  animation: slideIn 0.5s ease;
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+h3 {
+  margin: 10px 0px 25px 0px;
+  font-size: 28px;
+  font-weight: 500;
+  color: $textTitleColor;
+}
+
+.basket {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  right: 0;
+  border: none;
+  border-radius: 8px;
+  background-color: $componentBackgroundColor;
+  color: #2a2a2a;
+  margin: 0;
+  padding: 5px 15px;
+  outline: none;
+  height: max-content;
+  width: max-content;
+
+  &:active {
+    outline: none;
+    background-color: $borderColor;
+  }
+
+  cursor: pointer;
+
+  p {
+    margin: 0;
+    font-family: $fontFamily;
+    font-size: 14px;
+  }
+
+  img {
+    margin-left: 15px;
+  }
+
+  .count {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    color: #fff;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+    padding: 3px;
+  }
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  .filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .btnGetProd {
+    position: static;
+    right: 0;
+    top: 0;
+    height: min-content;
+    // width: max-content;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(108, 99, 255, 0.8);
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+
+    &:active {
+      background-color: #b8b9f9;
+    }
+  }
+
+  .search {
+    display: flex;
+    flex-direction: row;
+
+    .input {
+      height: 35px;
+      width: 200px;
+      background-color: $componentBackgroundColor;
+      color: $textColor;
+      border: none;
+      border-radius: 8px;
+      padding-left: 10px;
+      margin-right: 10px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.custom-select {
+  position: relative;
+  width: 200px;
+}
+
+.selected {
+  padding: 10px;
+  background-color: $componentBackgroundColor;
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.options li {
+  padding: 10px;
+}
+
+.options li:hover {
+  background-color: $borderColor;
+}
+
+// Стили для мобилки
+
+@media (max-width: 768px) {
+  .container {
+    // background-color: #d72525;
+  }
+}

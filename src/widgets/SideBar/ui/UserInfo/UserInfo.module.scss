@@ -1,0 +1,110 @@
+.info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 10px 30px 10px;
+
+  .admin {
+    position: relative;
+    width: 100%;
+
+    .open {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: $borderColor 2px solid;
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .close {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .user {
+    position: relative;
+    width: 100%;
+
+    .open {
+      display: flex;
+      align-items: center;
+      border: $borderColor 2px solid;
+      border-radius: 12px;
+      padding: 18px;
+
+      .title {
+        max-width: 130px;
+        padding: 5px;
+        overflow: hidden;
+        color: $textColor;
+        font-weight: 500;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-left: 5px;
+      }
+
+      .text {
+        width: fit-content;
+        max-width: 130px;
+        margin-left: 5px;
+        border-radius: 8px;
+        padding: 5px;
+        overflow: hidden;
+        color: $textGreyColor;
+        font-weight: 500;
+        font-size: 10px;
+        text-overflow: ellipsis;
+        background-color: #f2f4f7;
+        white-space: nowrap;
+      }
+
+      .logout {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+
+    .close {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .logout {
+        margin-top: 20px;
+        background-color: transparent;
+
+        padding: 0;
+      }
+    }
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .avatarSmall {
+    width: 30px;
+    height: 30px;
+  }
+
+  p {
+    margin: 0;
+  }
+}

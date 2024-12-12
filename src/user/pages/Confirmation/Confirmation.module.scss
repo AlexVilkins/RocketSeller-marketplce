@@ -1,0 +1,60 @@
+@mixin confirmComponent($width, $height) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: $width;
+  height: $height;
+}
+
+@keyframes rotateImg {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.confirm {
+  &Wrapper {
+    background-color: $textGreyColor;
+    height: 100vh;
+    position: relative;
+  }
+  &Content {
+    &Form {
+      @include confirmComponent(400px, 100px);
+      form {
+        display: flex;
+        gap: 10px;
+      }
+    }
+
+    &Img {
+      @include confirmComponent(200px, 220px);
+      animation: rotateImg 15s linear infinite;
+      top: 30%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h3 {
+      @include confirmComponent(100%, 100%);
+      text-align: center;
+      margin: 0;
+      padding-top: 10%;
+    }
+  }
+
+  &Refresh {
+    color: $textColor;
+    margin: 0;
+    font-size: 12px;
+    span {
+      cursor: pointer;
+    }
+  }
+}

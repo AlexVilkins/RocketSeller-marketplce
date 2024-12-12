@@ -1,0 +1,39 @@
+// @import "src/scss/variables";
+
+.history {
+  position: fixed;
+  top: 0;
+  right: 30px;
+  width: 5px;
+  height: 100%;
+  border-left: #ececee 2px solid;
+  // border-radius: 10px 0 0 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+  z-index: 99;
+
+  .data {
+    margin: 0;
+    padding: 0;
+    color: $textGreyColor;
+    font-size: 14px;
+  }
+
+  .content {
+    flex-direction: column;
+
+    margin-top: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ececee transparent;
+  }
+}
+
+.history.open {
+  right: 0;
+  width: 300px;
+}

@@ -1,0 +1,99 @@
+.sessiaWrapper {
+  display: flex;
+  align-items: center;
+
+  .clicked {
+    color: #4d4aea;
+    background-color: #f4f3ff;
+    font-weight: 500;
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .sessia {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #ececee 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 10px;
+    color: $textColor;
+    font-size: 12px;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+
+    &:hover {
+      // background-color: #f2f4f7;
+      cursor: pointer;
+    }
+
+    .sessionContainer {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 150px;
+    }
+
+    .time {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      color: $textGreyColor;
+      font-size: 10px;
+      margin: 10p 0;
+      padding: 0;
+    }
+
+    .date {
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+      color: $textGreyColor;
+      font-size: 10px;
+      margin: 10px 0;
+      padding: 0;
+    }
+  }
+}
+.loader {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    opacity 0.75s,
+    visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 4px solid #f6cd59;
+  border-top-color: #6183a21a;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

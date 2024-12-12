@@ -1,0 +1,103 @@
+{
+  "filtersList": {
+    "category": {
+      "label": "Категория",
+      "hasInterval": false,
+      "hasSearch": true,
+      "value": [],
+      "selected": "",
+      "step": 1,
+      "symbol": "",
+      "changed": false,
+      "error": false
+    },
+    "Roi": {
+      "label": "ROI",
+      "hasInterval": true,
+      "hasSearch": false,
+      "value": [0, 599],
+      "selected": [0, 599],
+      "step": 1,
+      "symbol": "%",
+      "changed": false,
+      "error": false
+    },
+    "PurchaseCny": {
+      "label": "Себестоимость",
+      "hasInterval": true,
+      "hasSearch": false,
+      "value": [0, 10000000],
+      "selected": [0, 10000000],
+      "step": 1000,
+      "symbol": "₽",
+      "changed": false,
+      "error": false
+    },
+    "Performance": {
+      "label": "Перфоманс",
+      "hasInterval": true,
+      "hasSearch": false,
+      "value": [0, 100],
+      "selected": [0, 100],
+      "step": 1,
+      "symbol": "%",
+      "changed": false,
+      "error": false
+    },
+    "Profit": {
+      "label": "Прибыль",
+      "hasInterval": true,
+      "hasSearch": false,
+      "value": [0, 10000000],
+      "selected": [0, 10000000],
+      "step": 1000,
+      "symbol": "₽",
+      "changed": false,
+      "error": false
+    },
+    "Investments": {
+      "label": "Инвестиции на запуск",
+      "hasInterval": true,
+      "hasSearch": false,
+      "value": [0, 10000000],
+      "selected": [0, 10000000],
+      "step": 1000,
+      "symbol": "₽",
+      "changed": false,
+      "error": false
+    },
+    "UnitsToBuy": {
+      "label": "Количество к закупке",
+      "hasInterval": true,
+      "hasSearch": false,
+      "value": [0, 50000],
+      "selected": [0, 50000],
+      "step": 100,
+      "symbol": "шт",
+      "changed": false,
+      "error": false
+    },
+    "Margin": {
+      "label": "Маржинальность",
+      "hasInterval": true,
+      "hasSearch": false,
+      "value": [0, 10000000],
+      "selected": [0, 10000000],
+      "step": 1000,
+      "symbol": "₽",
+      "changed": false,
+      "error": false
+    },
+    "TurnoverPerMonth": {
+      "label": "Оборот в месяц",
+      "hasInterval": true,
+      "hasSearch": false,
+      "value": [0, 10000000],
+      "selected": [0, 10000000],
+      "step": 1000,
+      "symbol": "₽",
+      "changed": false,
+      "error": false
+    }
+  }
+}

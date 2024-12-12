@@ -1,0 +1,30 @@
+// @import "src/scss/_variables.scss";
+
+.navbar {
+  border-bottom: $borderColor 2px solid;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: $textGreyColor;
+  transition: color 0.3s ease;
+}
+
+.active a {
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  color: $buttonColor;
+}

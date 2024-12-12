@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  // border-collapse: inherit;
+  border-spacing: 0 15px;
+  padding: 0 10px;
+  background-color: white;
+  border-radius: 12px;
+  // border-bottom: 2px solid $borderColor;
+
+  thead {
+    height: 40px;
+  }
+
+  th {
+    color: $textColor;
+    font-weight: 300;
+    font-size: 16px;
+  }
+}

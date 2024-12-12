@@ -1,0 +1,57 @@
+.balance {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $borderColor;
+  padding: 15px;
+  margin: 0 10px 20px 10px;
+  border-radius: 20px;
+
+  .balanceHeader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+    }
+
+    .remains {
+      white-space: nowrap;
+      padding: 5px 15px;
+      background-color: $componentBackgroundColor;
+      border-radius: 8px;
+    }
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #c0eec0;
+    color: #69936c;
+    padding: 8px 15px;
+    cursor: pointer;
+
+    &:active {
+      background-color: #69936c;
+      color: #c0eec0;
+    }
+  }
+}
+
+.balanceSmall {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 0 10px 20px 10px;
+  // margin-bottom: 20px;
+  cursor: pointer;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}

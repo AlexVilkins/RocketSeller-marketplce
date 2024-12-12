@@ -1,0 +1,61 @@
+.categoryWrapper {
+  font-weight: 400;
+
+  span {
+    margin: 5px;
+  }
+  .categoryIcon {
+    min-width: 43px;
+    min-height: 43px;
+    border-radius: 8px;
+    background-color: rgba(246, 231, 254, 1);
+  }
+}
+
+.valueWrapper {
+  align-items: center;
+  width: min-content;
+  margin: auto;
+  border-radius: 200px;
+  padding: 6px 12px;
+}
+
+.positiveValue {
+  color: #2b6a51;
+}
+
+.negativeValue {
+  color: rgba(139, 64, 64, 1);
+  background-color: rgba(249, 202, 202, 1);
+}
+
+button {
+  background-color: #f2f4f7;
+  color: #2a2a2a;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buttonBuy {
+  width: 100px;
+  height: 40px;
+  justify-content: center;
+}
+
+.isBuy {
+  display: flex;
+  justify-content: space-between;
+  // width: 100px;
+
+  button {
+    padding: 5px 10px;
+
+    img {
+      width: 25px;
+    }
+  }
+}

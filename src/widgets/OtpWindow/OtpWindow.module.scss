@@ -1,0 +1,170 @@
+.wraper {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+
+  .helloTitle {
+    color: $textColor;
+    width: 80%;
+    margin: auto;
+    // margin:  050px 0;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    // display: flex;
+    // justify-self: center;
+
+    // justify-se: ;
+  }
+
+  .helloButton {
+    color: white;
+    font-size: 14px;
+    padding: 16px 32px;
+    background-color: $buttonColor;
+    display: flex;
+    justify-self: center;
+
+    &:active {
+      background-color: $buttonClickColor;
+    }
+  }
+
+  .container {
+    position: relative;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 0.8fr;
+    row-gap: 20px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 1100px;
+    height: 700px;
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        margin: 0 0 18px 0;
+        font-size: 54px;
+        font-weight: 700;
+        color: #42505c;
+      }
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .otpСontainer {
+        display: flex;
+        justify-content: space-between;
+        // width: 300px; /* Ширина контейнера */
+        // margin: 0 auto; /* Центрирование */
+      }
+
+      .otpInput {
+        width: 70px; /* Ширина каждого поля ввода */
+        height: 50px; /* Высота каждого поля ввода */
+        text-align: center; /* Выравнивание текста по центру */
+        font-size: 24px; /* Размер шрифта */
+        border: 2px solid #ccc; /* Граница */
+        border-radius: 4px; /* Закругление углов */
+        margin: 15px;
+        font-weight: 700;
+        color: #292d32;
+
+        background-color: #c6c7f8; /* Цвет границы при фокусе */
+      }
+
+      .otpInput:focus {
+        background-color: white;
+        outline: none;
+      }
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .resend {
+        background-color: transparent;
+        color: rgba(108, 99, 255, 0.8);
+        margin: 18px;
+        padding: 0;
+
+        &:active {
+          color: rgba(108, 99, 255, 1);
+        }
+      }
+
+      .circularTimer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .timerText {
+        position: absolute;
+        font-size: 24px;
+        font-weight: bold;
+        color: rgba(108, 99, 255, 1);
+      }
+
+      .disable {
+        margin: 18px;
+        padding: 0;
+        background-color: transparent;
+        pointer-events: none; /* Отключает взаимодействие */
+        opacity: 0.5; /* Делаем элемент полупрозрачным */
+      }
+
+      .confirm {
+        color: white;
+        font-size: 14px;
+        padding: 16px 32px;
+        background-color: rgba(108, 99, 255, 0.8);
+
+        &:active {
+          background-color: rgba(108, 99, 255, 1);
+        }
+      }
+    }
+  }
+
+  .close {
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .text {
+    text-align: center;
+    width: 70%;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #404040;
+    margin: 0;
+    line-height: 2;
+  }
+}

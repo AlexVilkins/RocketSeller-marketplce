@@ -1,0 +1,14 @@
+.container {
+  overflow-x: hidden;
+
+  .contentOpen {
+    padding: 25px;
+    margin-left: 255px;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  .contentClose {
+    padding: 25px;
+    margin-left: 90px;
+    transition: margin-left 0.3s ease-in-out;
+  }
+}

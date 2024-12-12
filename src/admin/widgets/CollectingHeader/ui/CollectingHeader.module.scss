@@ -1,0 +1,68 @@
+.panel {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  gap: 5px;
+
+  textarea {
+    width: 90%;
+    resize: vertical;
+    min-height: 30px;
+    max-height: 100px;
+    overflow-y: auto;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: $componentBackgroundColor;
+    color: $textColor;
+    padding: 5px 10px;
+
+    &::placeholder {
+      color: $textGreyColor;
+      font-size: 14px;
+    }
+  }
+
+  .download {
+    background: transparent;
+    border: 1px solid #107c41;
+    color: #107c41;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: white;
+    height: 37px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    &:active {
+      background-color: rgba(108, 99, 255, 1);
+    }
+
+    img {
+      width: 20px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.download {
+  background: transparent;
+  border: 1px solid #107c41;
+  color: #107c41;
+  display: flex;
+  align-items: center;
+  height: 35px;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px 15px;
+
+  img {
+    width: 20px;
+    margin-left: 10px;
+  }
+}

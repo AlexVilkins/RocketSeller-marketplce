@@ -1,0 +1,14 @@
+.toggleButton {
+  display: flex;
+  justify-content: start;
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  outline: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  img {
+    width: 30px;
+  }
+}

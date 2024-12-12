@@ -1,0 +1,83 @@
+.wrapper {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  &.open {
+    opacity: 1;
+  }
+
+  &.close {
+    opacity: 0;
+  }
+
+  .container {
+    position: relative;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    row-gap: 20px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 20px;
+    width: max-content;
+    height: max-content;
+    transform: scale(0.8); /* Начальный масштаб при открытии */
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+
+    &.open {
+      transform: scale(1); /* Масштаб при открытии */
+    }
+
+    &.close {
+      transform: scale(0.8); /* Масштаб при закрытии */
+    }
+
+    .header {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 500;
+        color: $textTitleColor;
+        margin: 0;
+      }
+
+      button {
+        width: max-content;
+        height: max-content;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+
+        img {
+          width: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    body {
+      width: 100%;
+      //   overflow-y: auto;
+    }
+
+    footer {
+      width: 100%;
+      //   overflow-y: auto;
+    }
+  }
+}

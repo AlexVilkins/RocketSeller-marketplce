@@ -1,0 +1,14 @@
+.animation {
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0; /* Начальное состояние - невидимый */
+    transform: translateX(-50px); /* Сдвинут влево */
+  }
+  100% {
+    opacity: 1; /* Конечное состояние - видимый */
+    transform: translateX(0); /* На своем месте */
+  }
+}
